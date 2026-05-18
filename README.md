@@ -168,6 +168,10 @@ Third party code is used in some test and common code files:
 
 See also the SPDX License Identifiers in the respective files.
 
+## Maintainance status
+
+This implementation is maintained by the [MAYO team](https://pqmayo.org/team/). We aim to respond to issues and provide fixes as appropriate. As part of the ongoing NIST PQC standardization process, the project remains under active development and continues to evolve.
+
 ## Citing
 
 Bibtext:
