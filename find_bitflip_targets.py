@@ -282,96 +282,103 @@ def main():
             target_link_addr,
             target_runtime_addr
         )
-
+        print
+        # for i in inst["bytes"]:
         # Mutate only the first byte of each decoded instruction.
-        orig_opcode = inst["bytes"][0]
+        # Try faulting every byte of the instruction independently.
+        for byte_idx, orig_byte in enumerate(inst["bytes"]):
 
-        if mode == "bitflip":
-            values_to_try = [
-                (orig_opcode ^ (1 << bit), f"bit{bit}")
-                for bit in range(8)
-            ]
+            byte_runtime_addr = runtime_addr + byte_idx
 
-        elif mode == "full":
-            values_to_try = [
-                (value, f"0x{value:02x}")
-                for value in range(256)
-                if value != orig_opcode
-            ]
+            if mode == "bitflip":
+                values_to_try = [
+                    (orig_byte ^ (1 << bit), f"byte{byte_idx}_bit{bit}")
+                    for bit in range(8)
+                ]
 
-        else:
-            print(f"Unknown mode: {mode}")
-            sys.exit(1)
+            elif mode == "full":
+                values_to_try = [
+                    (value, f"byte{byte_idx}_0x{value:02x}")
+                    for value in range(256)
+                    if value != orig_byte
+                ]
 
-        for new_opcode, label in values_to_try:
-            total += 1
+            else:
+                print(f"Unknown mode: {mode}")
+                sys.exit(1)
 
-            note = (
-                f"[inst_link=0x{link_addr:x} "
-                f"inst_runtime=0x{runtime_addr:x} "
-                f"asm=\"{inst['asm']}\" "
-                f"orig_opcode=0x{orig_opcode:02x} "
-                f"new_opcode=0x{new_opcode:02x} "
-                f"{label}]"
-            )
+            for new_byte, label in values_to_try:
+                total += 1
 
-            output, crashed, success_found = run_gdb(
-                EXECUTABLE,
-                hex(runtime_addr),
-                new_opcode,
-                success_string
-            )
-
-            with open(RAW_LOG, "a") as f:
-                f.write(
-                    f"\n========================================\n"
-                    f"{note}\n"
-                    f"ORIGINAL BYTES: {format_bytes(inst['bytes'])}\n"
-                    f"CRASHED: {crashed}\n"
-                    f"SUCCESS: {success_found}\n"
-                    f"========================================\n"
-                )
-                f.write(output)
-                f.write("\n")
-
-            if not crashed:
-                clean_no_crash += 1
-
-                status = (
-                    "SUCCESS_STRING_FOUND"
-                    if success_found
-                    else "NO_SUCCESS_STRING"
+                note = (
+                    f"[inst_link=0x{link_addr:x} "
+                    f"inst_runtime=0x{runtime_addr:x} "
+                    f"byte={byte_idx} "
+                    f"asm=\"{inst['asm']}\" "
+                    f"orig_byte=0x{orig_byte:02x} "
+                    f"new_byte=0x{new_byte:02x} "
+                    f"{label}]"
                 )
 
-                with open(HITS_FILE, "a") as f:
+                output, crashed, success_found = run_gdb(
+                    EXECUTABLE,
+                    hex(byte_runtime_addr),
+                    new_byte,
+                    success_string
+                )
+
+                with open(RAW_LOG, "a") as f:
                     f.write(
-                        f"{note} "
-                        f"crashed=False "
-                        f"{status}\n"
+                        f"\n========================================\n"
+                        f"{note}\n"
+                        f"ORIGINAL BYTES: {format_bytes(inst['bytes'])}\n"
+                        f"CRASHED: {crashed}\n"
+                        f"SUCCESS: {success_found}\n"
+                        f"========================================\n"
+                    )
+                    f.write(output)
+                    f.write("\n")
+
+                if not crashed:
+                    clean_no_crash += 1
+
+                    status = (
+                        "SUCCESS_STRING_FOUND"
+                        if success_found
+                        else "NO_SUCCESS_STRING"
                     )
 
-                if success_found:
-                    clean_and_success += 1
+                    with open(HITS_FILE, "a") as f:
+                        f.write(
+                            f"{note} "
+                            f"crashed=False "
+                            f"{status}\n"
+                        )
 
-                    print(
-                        f"[HIT]  "
-                        f"0x{link_addr:x} "
-                        f"{inst['asm']} | "
-                        f"0x{orig_opcode:02x} -> "
-                        f"0x{new_opcode:02x} "
-                        f"{label}"
-                    )
+                    if success_found:
+                        clean_and_success += 1
 
-                else:
-                    print(
-                        f"[..]   "
-                        f"0x{link_addr:x} "
-                        f"{inst['asm']} | "
-                        f"0x{orig_opcode:02x} -> "
-                        f"0x{new_opcode:02x} "
-                        f"{label} | "
-                        f"NO SUCCESS"
-                    )
+                        print(
+                            f"[HIT]  "
+                            f"0x{link_addr:x} "
+                            f"byte={byte_idx} "
+                            f"{inst['asm']} | "
+                            f"0x{orig_byte:02x} -> "
+                            f"0x{new_byte:02x} "
+                            f"{label}"
+                        )
+
+                    else:
+                        print(
+                            f"[..]   "
+                            f"0x{link_addr:x} "
+                            f"byte={byte_idx} "
+                            f"{inst['asm']} | "
+                            f"0x{orig_byte:02x} -> "
+                            f"0x{new_byte:02x} "
+                            f"{label} | "
+                            f"NO SUCCESS"
+                        )
 
     print("\n========================================")
     print("FAULT INJECTION COMPLETE")
