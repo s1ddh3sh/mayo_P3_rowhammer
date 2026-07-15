@@ -1,0 +1,12 @@
+[byte_offset=0 orig=0x00 new=0x01 bit0] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x02 bit1] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x04 bit2] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x08 bit3] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x10 bit4] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x20 bit5] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x40 bit6] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=0 orig=0x00 new=0x80 bit7] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=1 orig=0x00 new=0x01 bit0] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=1 orig=0x00 new=0x02 bit1] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=3 orig=0x48 new=0x49 bit0] crashed=False SUCCESS_STRING_FOUND
+[byte_offset=3 orig=0x48 new=0x4a bit1] crashed=False SUCCESS_STRING_FOUND

@@ -29,3 +29,18 @@ foreach(MVARIANT ${MVARIANT_S})
     target_include_directories(example_nistapi_${MVARIANT_LOWER} PRIVATE ../include ../src/${MVARIANT_LOWER})
 endforeach()
 
+
+## decode mayo fault
+if (ENABLE_PARAMS_DYNAMIC)
+    add_executable(mayo_P3_fault mayo_P3_fault2.c)
+    target_link_libraries(mayo_P3_fault PRIVATE mayo)
+    target_include_directories(mayo_P3_fault PRIVATE ../include)
+else()
+    foreach(MVARIANT ${MVARIANT_S})
+        string(TOLOWER ${MVARIANT} MVARIANT_LOWER)
+        add_executable(mayo_P3_fault_${MVARIANT_LOWER} mayo_P3_fault2.c)
+        target_link_libraries(mayo_P3_fault_${MVARIANT_LOWER} PRIVATE ${MVARIANT_LOWER})
+        target_include_directories(mayo_P3_fault_${MVARIANT_LOWER} PRIVATE ../include ../src/common ../src/generic)
+        target_compile_definitions(mayo_P3_fault_${MVARIANT_LOWER} PRIVATE MAYO_VARIANT=${MVARIANT})
+    endforeach()
+endif()

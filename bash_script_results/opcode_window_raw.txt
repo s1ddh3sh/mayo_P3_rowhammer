@@ -1,0 +1,4148 @@
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x67 bit0]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -64 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307641) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x64 bit1]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -134 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307655) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x62 bit2]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -118 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307669) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x6e bit3]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -176 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307683) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x76 bit4]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -21 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307697) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x46 bit5]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -26 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307711) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0x26 bit6]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 153 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307725) exited normally]
+
+
+========================================
+[inst_link=0x220a inst_runtime=0x55555555620a asm="nopw   0x0(%rax,%rax,1)" orig_opcode=0x66 new_opcode=0xe6 bit7]
+ORIGINAL BYTES: 66 0f 1f 44 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 94 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307739) exited normally]
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x40 bit0]
+ORIGINAL BYTES: 41 57
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555c779 in pqmayo_MAYO_1_opt_mayo_keypair_compact ()
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x43 bit1]
+ORIGINAL BYTES: 41 57
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -123 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307777) exited normally]
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x45 bit2]
+ORIGINAL BYTES: 41 57
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 89 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307791) exited normally]
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x49 bit3]
+ORIGINAL BYTES: 41 57
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 41 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307805) exited normally]
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x51 bit4]
+ORIGINAL BYTES: 41 57
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd2490 in ?? ()
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x61 bit5]
+ORIGINAL BYTES: 41 57
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556210 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0x01 bit6]
+ORIGINAL BYTES: 41 57
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fc7 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2210 inst_runtime=0x555555556210 asm="push   %r15" orig_opcode=0x41 new_opcode=0xc1 bit7]
+ORIGINAL BYTES: 41 57
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x48 bit0]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556169 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x4b bit1]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 71 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 307889) exited normally]
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x4d bit2]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x0000555555555fa5 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x41 bit3]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fa5 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x59 bit4]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fc7 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x69 bit5]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556212 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0x09 bit6]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556212 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2212 inst_runtime=0x555555556212 asm="mov    %rdx,%r15" orig_opcode=0x49 new_opcode=0xc9 bit7]
+ORIGINAL BYTES: 49 89 d7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fc7 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555617f in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 40 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308007) exited normally]
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: False
+SUCCESS: True
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308021) exited with code 0377]
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556019 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556019 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555617f in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556215 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2215 inst_runtime=0x555555556215 asm="mov    %rsi,%rdx" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 89 f2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555617f in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x40 bit0]
+ORIGINAL BYTES: 41 56
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -24 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308106) exited normally]
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x43 bit1]
+ORIGINAL BYTES: 41 56
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -35 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308120) exited normally]
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x45 bit2]
+ORIGINAL BYTES: 41 56
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -32 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308134) exited normally]
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x49 bit3]
+ORIGINAL BYTES: 41 56
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 100 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308148) exited normally]
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x51 bit4]
+ORIGINAL BYTES: 41 56
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd1ef0 in ?? ()
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x61 bit5]
+ORIGINAL BYTES: 41 56
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556218 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0x01 bit6]
+ORIGINAL BYTES: 41 56
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2218 inst_runtime=0x555555556218 asm="push   %r14" orig_opcode=0x41 new_opcode=0xc1 bit7]
+ORIGINAL BYTES: 41 56
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555621c in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x48 bit0]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -170 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308218) exited with code 0377]
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x4b bit1]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 32 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308232) exited normally]
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x4d bit2]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -59 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308246) exited with code 0377]
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x41 bit3]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x59 bit4]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x69 bit5]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555621a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0x09 bit6]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555621a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221a inst_runtime=0x55555555621a asm="mov    %rsi,%r14" orig_opcode=0x49 new_opcode=0xc9 bit7]
+ORIGINAL BYTES: 49 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000040 in ?? ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x4d bit0]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x4e bit1]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -113 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308355) exited normally]
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x48 bit2]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 183 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308369) exited with code 0377]
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x44 bit3]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fa5 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x5c bit4]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555555fa5 in P1_times_O.isra.0 ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x6c bit5]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555621d in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0x0c bit6]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x221d inst_runtime=0x55555555621d asm="mov    %r15,%rsi" orig_opcode=0x4c new_opcode=0xcc bit7]
+ORIGINAL BYTES: 4c 89 fe
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x000055555555621e in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x40 bit0]
+ORIGINAL BYTES: 41 55
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -147 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308453) exited with code 0377]
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x43 bit1]
+ORIGINAL BYTES: 41 55
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 2 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308467) exited normally]
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x45 bit2]
+ORIGINAL BYTES: 41 55
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 117 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308487) exited normally]
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x49 bit3]
+ORIGINAL BYTES: 41 55
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -147 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308501) exited normally]
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x51 bit4]
+ORIGINAL BYTES: 41 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd1ef0 in ?? ()
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x61 bit5]
+ORIGINAL BYTES: 41 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556220 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0x01 bit6]
+ORIGINAL BYTES: 41 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2220 inst_runtime=0x555555556220 asm="push   %r13" orig_opcode=0x41 new_opcode=0xc1 bit7]
+ORIGINAL BYTES: 41 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x4c bit0]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x4f bit1]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -1 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308585) exited normally]
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x49 bit2]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -192 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308599) exited with code 0377]
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x45 bit3]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x5d bit4]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x6d bit5]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556222 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0x0d bit6]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2222 inst_runtime=0x555555556222 asm="mov    %r15,%r13" orig_opcode=0x4d new_opcode=0xcd bit7]
+ORIGINAL BYTES: 4d 89 fd
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556222 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x40 bit0]
+ORIGINAL BYTES: 41 54
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -171 
+FAIL
+[Inferior 1 (process 308684) exited with code 0377]
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x43 bit1]
+ORIGINAL BYTES: 41 54
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 11 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308698) exited normally]
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x45 bit2]
+ORIGINAL BYTES: 41 54
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -78 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308712) exited normally]
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x49 bit3]
+ORIGINAL BYTES: 41 54
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 179 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 308726) exited normally]
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x51 bit4]
+ORIGINAL BYTES: 41 54
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd1ef0 in ?? ()
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x61 bit5]
+ORIGINAL BYTES: 41 54
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556225 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0x01 bit6]
+ORIGINAL BYTES: 41 54
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x0000555555556225 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2225 inst_runtime=0x555555556225 asm="push   %r12" orig_opcode=0x41 new_opcode=0xc1 bit7]
+ORIGINAL BYTES: 41 54
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x0000555555556225 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x54 bit0]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd2490 in ?? ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x57 bit1]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555c0af in pqmayo_MAYO_1_opt_mayo_keypair_compact ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x51 bit2]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x5d bit3]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd2e90 in ?? ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x45 bit4]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x75 bit5]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0x15 bit6]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd2e90 in ?? ()
+
+
+========================================
+[inst_link=0x2227 inst_runtime=0x555555556227 asm="push   %rbp" orig_opcode=0x55 new_opcode=0xd5 bit7]
+ORIGINAL BYTES: 55
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556227 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x52 bit0]
+ORIGINAL BYTES: 53
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 83 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308908) exited with code 0377]
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x51 bit1]
+ORIGINAL BYTES: 53
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 148 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308922) exited with code 0377]
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x57 bit2]
+ORIGINAL BYTES: 53
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -91 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 308936) exited with code 0377]
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x5b bit3]
+ORIGINAL BYTES: 53
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd2e90 in ?? ()
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x43 bit4]
+ORIGINAL BYTES: 53
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x73 bit5]
+ORIGINAL BYTES: 53
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0x13 bit6]
+ORIGINAL BYTES: 53
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555622b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2228 inst_runtime=0x555555556228 asm="push   %rbx" orig_opcode=0x53 new_opcode=0xd3 bit7]
+ORIGINAL BYTES: 53
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555622b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+free(): invalid next size (normal)
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=<optimized out>) at ./nptl/pthread_kill.c:44
+warning: 44	./nptl/pthread_kill.c: No such file or directory
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -106 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309046) exited normally]
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556235 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556229 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2229 inst_runtime=0x555555556229 asm="mov    %rcx,%rbx" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 89 cb
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -206 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309158) exited normally]
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x000055555555622c in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x222c inst_runtime=0x55555555622c asm="lea    0x140(%rbx),%rbp" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 8d ab 40 01 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556235 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000000000d in ?? ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 175 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309278) exited normally]
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -70 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309292) exited normally]
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556237 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556237 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x000055555555623a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556233 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2233 inst_runtime=0x555555556233 asm="sub    $0x20,%rsp" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 83 ec 20
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xe9 bit0]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+*** stack smashing detected ***: terminated
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=<optimized out>) at ./nptl/pthread_kill.c:44
+warning: 44	./nptl/pthread_kill.c: No such file or directory
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xea bit1]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x0000555555556237 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xec bit2]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556237 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xe0 bit3]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556251 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xf8 bit4]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x000055555555623a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xc8 bit5]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0xa8 bit6]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGILL, Illegal instruction.
+0x000055555555623a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2237 inst_runtime=0x555555556237 asm="call   1f50 <P1_times_O.isra.0>" orig_opcode=0xe8 new_opcode=0x68 bit7]
+ORIGINAL BYTES: e8 14 fd ff ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffffffd1ef0 in ?? ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x48 bit0]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555633a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x4b bit1]
+ORIGINAL BYTES: 49 89 da
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -123 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309502) exited normally]
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x4d bit2]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556392 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x41 bit3]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x59 bit4]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555633a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x69 bit5]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555623c in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0x09 bit6]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555623c in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223c inst_runtime=0x55555555623c asm="mov    %rbx,%r10" orig_opcode=0x49 new_opcode=0xc9 bit7]
+ORIGINAL BYTES: 49 89 da
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555633a in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x30 bit0]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x33 bit1]
+ORIGINAL BYTES: 31 ff
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 108 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309614) exited normally]
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x35 bit2]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x39 bit3]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x21 bit4]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x11 bit5]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0x71 bit6]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x223f inst_runtime=0x55555555623f asm="xor    %edi,%edi" orig_opcode=0x31 new_opcode=0xb1 bit7]
+ORIGINAL BYTES: 31 ff
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x48 bit0]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x4b bit1]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 72 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309737) exited normally]
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x4d bit2]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x41 bit3]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x59 bit4]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x69 bit5]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x0000555555556241 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0x09 bit6]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGBUS, Bus error.
+0x0000555555556241 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2241 inst_runtime=0x555555556241 asm="lea    0x6180(%r14),%rbx" orig_opcode=0x49 new_opcode=0xc9 bit7]
+ORIGINAL BYTES: 49 8d 9e 80 61 00 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 149 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309835) exited normally]
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 93 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309849) exited normally]
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 140 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309869) exited normally]
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 171 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 309883) exited with code 0377]
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556251 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556248 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2248 inst_runtime=0x555555556248 asm="movabs $0x1111111111111111,%rax" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 b8 11 11 11 11 11 11 11 11
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x4d bit0]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556325 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x4e bit1]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 47 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 309967) exited normally]
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x48 bit2]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556325 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x44 bit3]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x5c bit4]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x6c bit5]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556252 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0x0c bit6]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556325 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2252 inst_runtime=0x555555556252 asm="mov    %r14,%rsi" orig_opcode=0x4c new_opcode=0xcc bit7]
+ORIGINAL BYTES: 4c 89 f6
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0000555555556253 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x4c bit0]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x4f bit1]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 57 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310079) exited normally]
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x49 bit2]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 144 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310093) exited normally]
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x45 bit3]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x5d bit4]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556430 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x6d bit5]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556255 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0x0d bit6]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2255 inst_runtime=0x555555556255 asm="mov    %r14,%r11" orig_opcode=0x4d new_opcode=0xcd bit7]
+ORIGINAL BYTES: 4d 89 f3
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556255 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x4c bit0]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 5 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 310177) exited with code 0377]
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x4f bit1]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x49 bit2]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x45 bit3]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x5d bit4]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x6d bit5]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556258 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0x0d bit6]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2258 inst_runtime=0x555555556258 asm="lea    0x0(%r13,%rdi,1),%r9" orig_opcode=0x4d new_opcode=0xcd bit7]
+ORIGINAL BYTES: 4d 8d 4c 3d 00
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556258 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x48 bit0]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x4b bit1]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 15 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310303) exited normally]
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x4d bit2]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556270 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x41 bit3]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -186 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310333) exited normally]
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x59 bit4]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x69 bit5]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555625d in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0x09 bit6]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555625d in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x225d inst_runtime=0x55555555625d asm="mov    %rdi,%r14" orig_opcode=0x49 new_opcode=0xc9 bit7]
+ORIGINAL BYTES: 49 89 fe
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x49 bit0]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x4a bit1]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 53 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310428) exited normally]
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x4c bit2]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x40 bit3]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x58 bit4]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x68 bit5]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0x08 bit6]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556260 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2260 inst_runtime=0x555555556260 asm="mov    %rsi,%rdi" orig_opcode=0x48 new_opcode=0xc8 bit7]
+ORIGINAL BYTES: 48 89 f7
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555627b in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x4d bit0]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x4e bit1]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal -215 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> OK
+mayo_verify (with correct signature) -> OK
+mayo_open (with altered signature) -> OK
+mayo_verify (with altered signature) -> OK
+[Inferior 1 (process 310540) exited normally]
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x48 bit2]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x44 bit3]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x5c bit4]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562a4 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x6c bit5]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555556263 in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0x0c bit6]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: True
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555562ea in compute_P3.isra.0 ()
+
+
+========================================
+[inst_link=0x2263 inst_runtime=0x555555556263 asm="mov    %r10,%rdx" orig_opcode=0x4c new_opcode=0xcc bit7]
+ORIGINAL BYTES: 4c 89 d2
+CRASHED: False
+SUCCESS: False
+========================================
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0000555555556264 in compute_P3.isra.0 ()
+

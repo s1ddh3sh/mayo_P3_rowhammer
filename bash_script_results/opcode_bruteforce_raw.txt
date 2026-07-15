@@ -1,0 +1,394 @@
+
+===== [byte_offset=0 orig=0x00 new=0x01 bit0] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302150) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x02 bit1] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302164) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x04 bit2] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302178) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x08 bit3] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302192) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x10 bit4] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302206) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x20 bit5] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302220) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x40 bit6] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302234) exited with code 0377]
+
+
+===== [byte_offset=0 orig=0x00 new=0x80 bit7] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302249) exited with code 0377]
+
+
+===== [byte_offset=1 orig=0x00 new=0x01 bit0] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302263) exited with code 0377]
+
+
+===== [byte_offset=1 orig=0x00 new=0x02 bit1] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302281) exited with code 0377]
+
+
+===== [byte_offset=1 orig=0x00 new=0x04 bit2] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=1 orig=0x00 new=0x08 bit3] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=1 orig=0x00 new=0x10 bit4] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=1 orig=0x00 new=0x20 bit5] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=1 orig=0x00 new=0x40 bit6] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=1 orig=0x00 new=0x80 bit7] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x01 bit0] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x02 bit1] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x04 bit2] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x08 bit3] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x10 bit4] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x20 bit5] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x40 bit6] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=2 orig=0x00 new=0x80 bit7] crashed=True =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+
+
+===== [byte_offset=3 orig=0x48 new=0x49 bit0] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> [Inferior 1 (process 302634) exited normally]
+
+
+===== [byte_offset=3 orig=0x48 new=0x4a bit1] crashed=False =====
+Reading symbols from ./build/apps/example_mayo_1...
+(No debugging symbols found in ./build/apps/example_mayo_1)
+Temporary breakpoint 1 at 0x1200
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, 0x0000555555555200 in main ()
+Example with MAYO_1
+mayo_keypair ->  Is equal 0 
+OK
+mayo_expand_sk -> OK
+mayo_expand_pk -> OK
+mayo_sign -> OK
+mayo_open (with correct signature) -> FAIL
+[Inferior 1 (process 302648) exited with code 0377]
+

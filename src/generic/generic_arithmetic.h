@@ -70,7 +70,7 @@ void mul_add_mat_x_m_mat(const int m_vec_limbs, const unsigned char *mat, const 
     }
 }
 
-static inline
+static __attribute__((noinline, unused))
 void P1_times_O(const mayo_params_t* p, const uint64_t* P1, const unsigned char* O, uint64_t* acc){
     #ifndef ENABLE_PARAMS_DYNAMIC
     (void) p;
@@ -256,14 +256,14 @@ void compute_M_and_VPV(const mayo_params_t* p, const unsigned char* Vdec, const 
     mul_add_mat_x_m_mat(PARAM_m_vec_limbs(p), Vdec, Pv, VP1V, param_k, param_v, param_k);
 }
 
-static inline
+static __attribute__((noinline, unused))
 void compute_P3(const mayo_params_t* p, const uint64_t* P1, uint64_t *P2, const unsigned char *O, uint64_t *P3){
 
     const int m_vec_limbs = PARAM_m_vec_limbs(p);
     const int param_v = PARAM_v(p);
     const int param_o = PARAM_o(p);
 
-    // compute P1*O + P2
+    // compute P2 = P1*O + P2
     P1_times_O(p, P1, O, P2);
 
     // compute P3 = O^t * (P1*O + P2)
