@@ -2,98 +2,271 @@ import os
 import subprocess
 import tempfile
 import sys
+import re
 
-def run_gdb(executable, addr_hex, byte_offset, new_value, timeout=3):
-    """
-    Start `executable` under gdb, at (addr_hex + byte_offset) overwrite the byte
-    with new_value (0-255), continue, and capture combined stdout/stderr.
-    Returns (output_text, crashed_bool).
-    """
+
+EXECUTABLE = "mayo_P3_fault_mayo_1"
+
+
+def run_gdb(executable, runtime_addr, new_value, success_string, timeout=3):
+    """Run executable under GDB, overwrite one byte, continue, and capture output."""
+
     with tempfile.NamedTemporaryFile(mode="w", delete=False) as gdb_script:
         gdb_script.write("set pagination off\n")
-        gdb_script.write("handle SIGSEGV nostop noprint pass\n")
-        gdb_script.write("handle SIGILL nostop noprint pass\n")
-        gdb_script.write("handle SIGBUS nostop noprint pass\n")
-        gdb_script.write("handle SIGFPE nostop noprint pass\n")
-        gdb_script.write(f"set $addr = {addr_hex} + {byte_offset}\n")
+        gdb_script.write("set confirm off\n")
         gdb_script.write("start\n")
-        gdb_script.write(f"set *(unsigned char*) $addr = {new_value}\n")
+        gdb_script.write(
+            f"set *(unsigned char*)({runtime_addr}) = {new_value}\n"
+        )
         gdb_script.write("continue\n")
         gdb_script.write("quit\n")
         gdb_script_name = gdb_script.name
 
     try:
         result = subprocess.run(
-            ["timeout", str(timeout), "gdb", "-q", "-x", gdb_script_name, f"./{executable}"],
+            [
+                "timeout",
+                str(timeout),
+                "gdb",
+                "-q",
+                "-x",
+                gdb_script_name,
+                f"./{executable}"
+            ],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
             check=False
         )
         output = result.stdout
+
     except subprocess.TimeoutExpired:
         output = "TIMEOUT"
+
     finally:
         os.remove(gdb_script_name)
 
-    crashed = ("SIGSEGV" in output or "SIGILL" in output or "SIGBUS" in output
-               or "SIGFPE" in output or "Segmentation fault" in output
-               or "TIMEOUT" in output or "Program terminated with signal" in output)
-    return output, crashed
+    crash_strings = [
+        "SIGSEGV",
+        "SIGILL",
+        "SIGBUS",
+        "SIGFPE",
+        "Segmentation fault",
+        "Program terminated with signal",
+        "TIMEOUT"
+    ]
+
+    crashed = any(s in output for s in crash_strings)
+    success_found = success_string in output
+
+    return output, crashed, success_found
+
+def get_disassembly(executable):
+    """
+    Parse instruction lines from:
+
+        objdump -d -w ./build/apps/example_mayo_1
+
+    Example:
+
+        2237: e8 14 fd ff ff    call 1f50 <P1_times_O.isra.0>
+
+    Returns:
+
+        [
+            {
+                "address": 0x2237,
+                "bytes": [0xe8, 0x14, 0xfd, 0xff, 0xff],
+                "asm": "call 1f50 <P1_times_O.isra.0>"
+            },
+            ...
+        ]
+    """
+
+    result = subprocess.run(
+        ["objdump", "-d", "-w", f"./{executable}"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        check=True
+    )
+
+    instructions = []
+
+    for line in result.stdout.splitlines():
+
+        # Instruction lines must contain ':'
+        if ":" not in line:
+            continue
+
+        left, right = line.split(":", 1)
+
+        address_string = left.strip()
+
+        # Validate address field.
+        try:
+            address = int(address_string, 16)
+        except ValueError:
+            continue
+
+        #
+        # objdump normally separates:
+        #
+        # bytes <TAB> assembly
+        #
+        # Example:
+        #
+        # e8 14 fd ff ff<TAB>call 1f50 <...>
+        #
+
+        parts = right.strip().split("\t")
+
+        if not parts:
+            continue
+
+        byte_field = parts[0].strip()
+
+        byte_tokens = byte_field.split()
+
+        instruction_bytes = []
+
+        valid_bytes = True
+
+        for token in byte_tokens:
+
+            if len(token) != 2:
+                valid_bytes = False
+                break
+
+            try:
+                value = int(token, 16)
+            except ValueError:
+                valid_bytes = False
+                break
+
+            instruction_bytes.append(value)
+
+        if not valid_bytes or not instruction_bytes:
+            continue
+
+        # Everything after the byte field is assembly.
+        asm = " ".join(
+            part.strip()
+            for part in parts[1:]
+            if part.strip()
+        )
+
+        instructions.append({
+            "address": address,
+            "bytes": instruction_bytes,
+            "asm": asm
+        })
+
+    return instructions
 
 
-def get_original_bytes(executable, file_offset, num_bytes):
-    """
-    Read the original byte values directly from the ELF file on disk, so we
-    know what to XOR against for bitflip mode. file_offset must be the FILE
-    offset of the target bytes (not the runtime/link virtual address) --
-    get this from `readelf -S` (section file offset + (vaddr - section addr)),
-    or just eyeball it from `objdump -d` if .text starts at a known file offset.
-    """
-    with open(f"./{executable}", "rb") as f:
-        f.seek(file_offset)
-        return f.read(num_bytes)
+def find_instruction_window(instructions, target_addr, before_count, after_count):
+    """Return instructions before/after the target instruction."""
+
+    target_index = None
+
+    for i, inst in enumerate(instructions):
+        if inst["address"] == target_addr:
+            target_index = i
+            break
+
+    if target_index is None:
+        raise RuntimeError(
+            f"Could not find instruction at link address 0x{target_addr:x}"
+        )
+
+    start = max(0, target_index - before_count)
+    end = min(len(instructions), target_index + after_count + 1)
+
+    return instructions[start:end]
+
+
+def link_to_runtime_addr(instruction_addr, target_link_addr, target_runtime_addr):
+    """Convert link-time address to runtime address using target-address delta."""
+
+    return target_runtime_addr + (instruction_addr - target_link_addr)
+
+
+def format_bytes(byte_list):
+    return " ".join(f"{x:02x}" for x in byte_list)
 
 
 def main():
-    if len(sys.argv) < 6:
-        print(f"Usage: python3 {sys.argv[0]} <runtime_base_address> <file_offset> <num_bytes> <liboqs> <success_string> [mode]")
-        print(f"  runtime_base_address: address to poke via gdb at runtime, e.g. 0x0000555555556237")
-        print(f"  file_offset:          same location's offset within the binary FILE (for reading original bytes)")
-        print(f"  mode: 'bitflip' (default, 8 flips/byte) or 'full' (all 256 values/byte)")
-        print(f"Example: python3 {sys.argv[0]} 0x0000555555556237 0x2237 5 1 \"Is equal 0\" bitflip")
+    if len(sys.argv) < 7:
+        print(
+            f"Usage:\n"
+            f"  python3 {sys.argv[0]} "
+            f"<target_runtime_addr> "
+            f"<target_link_addr> "
+            f"<before_count> "
+            f"<after_count> "
+            f"<success_string> "
+            f"<mode>\n"
+        )
+
+        print(
+            "Example:\n"
+            f"  python3 {sys.argv[0]} "
+            "0x555555556237 "
+            "0x2237 "
+            "15 "
+            "10 "
+            "\"Is equal 0\" "
+            "bitflip"
+        )
+
         sys.exit(1)
 
-    input_addr = sys.argv[1]
-    if not input_addr.startswith("0x"):
-        print("Error: base address must start with 0x")
-        sys.exit(1)
-
-    file_offset = int(sys.argv[2], 16)
-    num_bytes = int(sys.argv[3])
-    liboqs = int(sys.argv[4])
+    target_runtime_addr = int(sys.argv[1], 16)
+    target_link_addr = int(sys.argv[2], 16)
+    before_count = int(sys.argv[3])
+    after_count = int(sys.argv[4])
     success_string = sys.argv[5]
-    mode = sys.argv[6] if len(sys.argv) > 6 else "bitflip"
-
-    if liboqs == 1:
-        EXECUTABLE = "liboqs_signature_gen/bin/sign_heap"
-    else:
-        EXECUTABLE = "build/apps/example_mayo_1"  # <-- adjust to your actual mayo binary path
+    mode = sys.argv[6]
 
     if not os.path.isfile(f"./{EXECUTABLE}"):
-        print(f"Error: ./{EXECUTABLE} does not exist. Please compile your code first.")
+        print(f"Error: ./{EXECUTABLE} does not exist.")
         sys.exit(1)
 
-    with open(os.path.expanduser("~/.gdbinit"), "w") as gdbinit:
-        gdbinit.write("set debuginfod enabled off\n")
+    instructions = get_disassembly(EXECUTABLE)
 
-    orig_bytes = get_original_bytes(EXECUTABLE, file_offset, num_bytes)
-    print(f"Original bytes at file offset 0x{file_offset:x}: {orig_bytes.hex()}")
+    window = find_instruction_window(
+        instructions,
+        target_link_addr,
+        before_count,
+        after_count
+    )
+
+    print("\nInstructions selected for fault injection:\n")
+
+    for inst in window:
+        marker = " <=== TARGET" if inst["address"] == target_link_addr else ""
+
+        print(
+            f"0x{inst['address']:x}: "
+            f"{format_bytes(inst['bytes']):<30} "
+            f"{inst['asm']}"
+            f"{marker}"
+        )
 
     OUTPUT_DIR = "bash_script_results"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    RAW_LOG = os.path.join(OUTPUT_DIR, "opcode_bruteforce_raw.txt")
-    HITS_FILE = os.path.join(OUTPUT_DIR, "opcode_bruteforce_hits.txt")
+
+    RAW_LOG = os.path.join(
+        OUTPUT_DIR,
+        "opcode_window_raw.txt"
+    )
+
+    HITS_FILE = os.path.join(
+        OUTPUT_DIR,
+        "opcode_window_hits.txt"
+    )
+
     open(RAW_LOG, "w").close()
     open(HITS_FILE, "w").close()
 
@@ -101,45 +274,115 @@ def main():
     clean_no_crash = 0
     clean_and_success = 0
 
-    for byte_offset in range(num_bytes):
-        orig_val = orig_bytes[byte_offset]
+    for inst in window:
+        link_addr = inst["address"]
+
+        runtime_addr = link_to_runtime_addr(
+            link_addr,
+            target_link_addr,
+            target_runtime_addr
+        )
+
+        # Mutate only the first byte of each decoded instruction.
+        orig_opcode = inst["bytes"][0]
 
         if mode == "bitflip":
-            values_to_try = [(orig_val ^ (1 << bit), f"bit{bit}") for bit in range(8)]
+            values_to_try = [
+                (orig_opcode ^ (1 << bit), f"bit{bit}")
+                for bit in range(8)
+            ]
+
         elif mode == "full":
-            values_to_try = [(v, f"0x{v:02x}") for v in range(256) if v != orig_val]
+            values_to_try = [
+                (value, f"0x{value:02x}")
+                for value in range(256)
+                if value != orig_opcode
+            ]
+
         else:
             print(f"Unknown mode: {mode}")
             sys.exit(1)
 
-        for new_val, label in values_to_try:
+        for new_opcode, label in values_to_try:
             total += 1
-            note = f"[byte_offset={byte_offset} orig=0x{orig_val:02x} new=0x{new_val:02x} {label}]"
 
-            output, crashed = run_gdb(EXECUTABLE, input_addr, byte_offset, new_val)
+            note = (
+                f"[inst_link=0x{link_addr:x} "
+                f"inst_runtime=0x{runtime_addr:x} "
+                f"asm=\"{inst['asm']}\" "
+                f"orig_opcode=0x{orig_opcode:02x} "
+                f"new_opcode=0x{new_opcode:02x} "
+                f"{label}]"
+            )
+
+            output, crashed, success_found = run_gdb(
+                EXECUTABLE,
+                hex(runtime_addr),
+                new_opcode,
+                success_string
+            )
 
             with open(RAW_LOG, "a") as f:
-                f.write(f"\n===== {note} crashed={crashed} =====\n")
+                f.write(
+                    f"\n========================================\n"
+                    f"{note}\n"
+                    f"ORIGINAL BYTES: {format_bytes(inst['bytes'])}\n"
+                    f"CRASHED: {crashed}\n"
+                    f"SUCCESS: {success_found}\n"
+                    f"========================================\n"
+                )
                 f.write(output)
                 f.write("\n")
 
             if not crashed:
                 clean_no_crash += 1
-                has_success = success_string in output
-                status = "SUCCESS_STRING_FOUND" if has_success else "no_success_string"
-                with open(HITS_FILE, "a") as f:
-                    f.write(f"{note} crashed=False {status}\n")
-                if has_success:
-                    clean_and_success += 1
-                    print(f"[HIT]  {note} -> no crash AND success string found")
-                else:
-                    print(f"[..]   {note} -> no crash, but success string absent")
-            # crashed attempts stay only in RAW_LOG to keep HITS_FILE short and scannable
 
-    print(f"\nDone. {total} attempts | {clean_no_crash} avoided crash | "
-          f"{clean_and_success} avoided crash AND matched success string.")
-    print(f"Raw output:   {RAW_LOG}")
-    print(f"Hits summary: {HITS_FILE}")
+                status = (
+                    "SUCCESS_STRING_FOUND"
+                    if success_found
+                    else "NO_SUCCESS_STRING"
+                )
+
+                with open(HITS_FILE, "a") as f:
+                    f.write(
+                        f"{note} "
+                        f"crashed=False "
+                        f"{status}\n"
+                    )
+
+                if success_found:
+                    clean_and_success += 1
+
+                    print(
+                        f"[HIT]  "
+                        f"0x{link_addr:x} "
+                        f"{inst['asm']} | "
+                        f"0x{orig_opcode:02x} -> "
+                        f"0x{new_opcode:02x} "
+                        f"{label}"
+                    )
+
+                else:
+                    print(
+                        f"[..]   "
+                        f"0x{link_addr:x} "
+                        f"{inst['asm']} | "
+                        f"0x{orig_opcode:02x} -> "
+                        f"0x{new_opcode:02x} "
+                        f"{label} | "
+                        f"NO SUCCESS"
+                    )
+
+    print("\n========================================")
+    print("FAULT INJECTION COMPLETE")
+    print("========================================")
+    print(f"Executable:             {EXECUTABLE}")
+    print(f"Instructions tested:    {len(window)}")
+    print(f"Total fault injections: {total}")
+    print(f"Clean executions:       {clean_no_crash}")
+    print(f"Successful skips:       {clean_and_success}")
+    print(f"Raw log:                {RAW_LOG}")
+    print(f"Hits:                   {HITS_FILE}")
 
 
 if __name__ == "__main__":
