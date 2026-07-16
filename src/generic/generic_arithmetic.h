@@ -3,6 +3,7 @@
 #ifndef GENERIC_ARITHMETIC_H
 #define GENERIC_ARITHMETIC_H
 
+#include <stdio.h>
 #include <simple_arithmetic.h>
 
 #ifdef ENABLE_PARAMS_DYNAMIC
@@ -16,6 +17,9 @@ static inline
 void mul_add_m_upper_triangular_mat_x_mat(const int m_vec_limbs, const uint64_t *bs_mat, const unsigned char *mat, uint64_t *acc,
                                           const int bs_mat_rows, const int bs_mat_cols, const int mat_cols, const int triangular) {
 
+    // printf("%d\n", triangular);
+    // printf("%d\n", bs_mat_rows);
+    // printf("%d\n", bs_mat_cols);
     int bs_mat_entries_used = 0;
     for (int r = 0; r < bs_mat_rows; r++) {
         for (int c = triangular * r; c < bs_mat_cols; c++) {
@@ -26,6 +30,25 @@ void mul_add_m_upper_triangular_mat_x_mat(const int m_vec_limbs, const uint64_t 
         }
     }
 }
+
+// static inline
+// void mul_add_m_upper_triangular_mat_x_mat_faulty(const int m_vec_limbs, const uint64_t *bs_mat, const unsigned char *mat, uint64_t *acc,
+//                                           const int bs_mat_rows, const int bs_mat_cols, const int mat_cols, const int triangular) {
+
+//     // printf("%d\n", triangular);
+//     // printf("%d\n", bs_mat_rows);
+//     // printf("%d\n", bs_mat_cols);
+//     int bs_mat_entries_used = 0;
+//     for (int r = 0; r < bs_mat_rows; r++) {
+//         for (int c = triangular * r; c < bs_mat_cols; c++) {
+//             for (int k = 0; k < mat_cols; k += 1) {
+//                 m_vec_mul_add(m_vec_limbs, bs_mat + m_vec_limbs * bs_mat_entries_used, mat[c * mat_cols + k], acc + m_vec_limbs * (r * mat_cols + k));
+//             }
+//             bs_mat_entries_used += 1;
+//         }
+//     }
+// }
+
 
 // multiplies m (possibly upper triangular) matrices with the transpose of a single matrix and adds result to acc
 static inline
@@ -69,14 +92,21 @@ void mul_add_mat_x_m_mat(const int m_vec_limbs, const unsigned char *mat, const 
         }
     }
 }
-
-static __attribute__((noinline, unused))
+static inline
 void P1_times_O(const mayo_params_t* p, const uint64_t* P1, const unsigned char* O, uint64_t* acc){
     #ifndef ENABLE_PARAMS_DYNAMIC
     (void) p;
     #endif
     mul_add_m_upper_triangular_mat_x_mat(PARAM_m_vec_limbs(p), P1, O, acc, PARAM_v(p), PARAM_v(p), PARAM_o(p), 1);
 }
+
+// static __attribute__((noinline, unused))
+// void P1_times_O_faulty(const mayo_params_t* p, const uint64_t* P1, const unsigned char* O, uint64_t* acc){
+//     #ifndef ENABLE_PARAMS_DYNAMIC
+//     (void) p;
+//     #endif
+//     mul_add_m_upper_triangular_mat_x_mat_faulty(PARAM_m_vec_limbs(p), P1, O, acc, PARAM_v(p), PARAM_v(p), PARAM_o(p), 1);
+// }
 
 static inline
 void P1_times_Vt(const mayo_params_t* p, const uint64_t* P1, const unsigned char* V, uint64_t* acc){
@@ -256,7 +286,7 @@ void compute_M_and_VPV(const mayo_params_t* p, const unsigned char* Vdec, const 
     mul_add_mat_x_m_mat(PARAM_m_vec_limbs(p), Vdec, Pv, VP1V, param_k, param_v, param_k);
 }
 
-static __attribute__((noinline, unused))
+static inline
 void compute_P3(const mayo_params_t* p, const uint64_t* P1, uint64_t *P2, const unsigned char *O, uint64_t *P3){
 
     const int m_vec_limbs = PARAM_m_vec_limbs(p);
