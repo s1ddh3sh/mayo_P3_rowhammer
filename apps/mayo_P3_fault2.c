@@ -11,8 +11,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 #include <sys/types.h>
-
+#include <errno.h>
 #define MAX_UNK 7000
 #define MAX_EQ 6000
 #define PK_PRF AES_128_CTR
@@ -175,6 +176,7 @@ static void verify_fault_equation(const mayo_params_t *p, const uint64_t *epk,
   int o = PARAM_o(p);
   int m = PARAM_m(p);
   int m_vec_limbs = PARAM_m_vec_limbs(p);
+  FILE *fp = fopen("../outs/output.txt", "a");
 
   uint64_t *P2 = (uint64_t *)(epk + PARAM_P1_limbs(p));
 
@@ -182,7 +184,7 @@ static void verify_fault_equation(const mayo_params_t *p, const uint64_t *epk,
 
   reconstruct_full_P3(p, epk, P3_full);
 
-  printf("\nVerifying P3 = O^T P2 + P2^T O\n");
+  fprintf(fp, "\nVerifying P3 = O^T P2 + P2^T O\n");
 
   for (int ell = 0; ell < m; ell++) {
     for (int i = 0; i < o; i++) {
@@ -215,8 +217,8 @@ static void verify_fault_equation(const mayo_params_t *p, const uint64_t *epk,
         unsigned char lhs = extract_m_element(p3_entry, ell, m_vec_limbs);
 
         if (lhs != rhs) {
-          printf("Mismatch at poly %d, (%d,%d)\n", ell, i, j);
-          printf("Stored P3 = %x, Computed RHS = %x\n", lhs, rhs);
+          fprintf(fp, "Mismatch at poly %d, (%d,%d)\n", ell, i, j);
+          fprintf(fp, "Stored P3 = %x, Computed RHS = %x\n", lhs, rhs);
 
           free(P3_full);
           return;
@@ -225,7 +227,7 @@ static void verify_fault_equation(const mayo_params_t *p, const uint64_t *epk,
     }
   }
 
-  printf("Equation holds for all entries.\n");
+  fprintf(fp, "Equation holds for all entries.\n");
 
   free(P3_full);
 }
@@ -255,19 +257,21 @@ static void pack_m_vecs(const uint64_t *in, unsigned char *out, int vecs,
 
 // ---------------- Rebuild public key from recovered O ----------------
 static void dump_hex(const char *label, const unsigned char *buf, size_t len) {
-  printf("%s (%zu bytes):\n", label, len);
+  FILE *fp = fopen("../outs/output.txt", "a");
+
+  fprintf(fp, "%s (%zu bytes):\n", label, len);
 
   for (size_t i = 0; i < len; i++) {
-    printf("%02x", buf[i]);
+    fprintf(fp, "%02x", buf[i]);
 
     if ((i + 1) % 32 == 0)
-      printf("\n");
+      fprintf(fp, "\n");
     else if ((i + 1) % 2 == 0)
-      printf(" ");
+      fprintf(fp, " ");
   }
 
   if (len % 32)
-    printf("\n");
+    fprintf(fp, "\n");
 }
 
 static unsigned char *rebuild_pk_from_recovered_O(
@@ -278,6 +282,7 @@ static unsigned char *rebuild_pk_from_recovered_O(
   int v = PARAM_v(p);
   int o = PARAM_o(p);
   int m_vec_limbs = PARAM_m_vec_limbs(p);
+  FILE *fp = fopen("../outs/output.txt", "a");
 
   int param_pk_seed_bytes = PARAM_pk_seed_bytes(p);
   int param_P1_limbs = PARAM_P1_limbs(p);
@@ -306,13 +311,14 @@ static unsigned char *rebuild_pk_from_recovered_O(
     }
   }
   if (o_mismatches == 0)
-    printf("O_rec matches esk->O exactly (%d entries checked).\n", v * o);
+    fprintf(fp, "O_rec matches esk->O exactly (%d entries checked).\n", v * o);
   else
-    printf("O_rec MISMATCH: %d / %d entries differ, first at index %d "
-           "(k=%d,i=%d) rec=0x%x real=0x%x\n",
-           o_mismatches, v * o, first_o_mismatch, first_o_mismatch / o,
-           first_o_mismatch % o, O_rec[first_o_mismatch] & 0xF,
-           esk->O[first_o_mismatch] & 0xF);
+    fprintf(fp,
+            "O_rec MISMATCH: %d / %d entries differ, first at index %d "
+            "(k=%d,i=%d) rec=0x%x real=0x%x\n",
+            o_mismatches, v * o, first_o_mismatch, first_o_mismatch / o,
+            first_o_mismatch % o, O_rec[first_o_mismatch] & 0xF,
+            esk->O[first_o_mismatch] & 0xF);
 
   // ---- Single contiguous P buffer, exactly like mayo_keypair_compact ----
   uint64_t *P =
@@ -328,7 +334,7 @@ static unsigned char *rebuild_pk_from_recovered_O(
       p1_mismatches++;
       break;
     }
-  printf("P1 slice check: %s\n", p1_mismatches == 0 ? "OK" : "MISMATCH");
+  fprintf(fp, "P1 slice check: %s\n", p1_mismatches == 0 ? "OK" : "MISMATCH");
 
   int p2_mismatches = 0;
   for (int i = 0; i < param_P2_limbs; i++)
@@ -336,7 +342,8 @@ static unsigned char *rebuild_pk_from_recovered_O(
       p2_mismatches++;
       break;
     }
-  printf("P2 pre-mutation check: %s\n", p2_mismatches == 0 ? "OK" : "MISMATCH");
+  fprintf(fp, "P2 pre-mutation check: %s\n",
+          p2_mismatches == 0 ? "OK" : "MISMATCH");
 
   uint64_t P3[O_MAX * O_MAX * M_VEC_LIMBS_MAX] = {0};
 
@@ -372,39 +379,43 @@ static unsigned char *rebuild_pk_from_recovered_O(
         first_p3_upper_mismatch = i;
     }
   }
-  if (p3_upper_limb_mismatches == 0)
-    printf("P3_upper (pre-pack) matches genuine epk P3_upper exactly (%d limbs "
-           "checked).\n",
-           param_P3_limbs);
-  else
-    printf(
-        "P3_upper (pre-pack) MISMATCH: %d / %d limbs differ, first at limb %d "
-        "(computed=0x%016" PRIx64 ", genuine=0x%016" PRIx64 ")\n",
-        p3_upper_limb_mismatches, param_P3_limbs, first_p3_upper_mismatch,
-        P3_upper[first_p3_upper_mismatch],
-        genuine_P3_upper[first_p3_upper_mismatch]);
+  // if (p3_upper_limb_mismatches == 0)
+  //   fprintf(
+  //       fp,
+  //       "P3_upper (pre-pack) matches genuine epk P3_upper exactly (%d limbs "
+  //       "checked).\n",
+  //       param_P3_limbs);
+  // else
+  //   fprintf(
+  //       fp,
+  //       "P3_upper (pre-pack) MISMATCH: %d / %d limbs differ, first at limb %d "
+  //       "(computed=0x%016" PRIx64 ", genuine=0x%016" PRIx64 ")\n",
+  //       p3_upper_limb_mismatches, param_P3_limbs, first_p3_upper_mismatch,
+  //       P3_upper[first_p3_upper_mismatch],
+  //       genuine_P3_upper[first_p3_upper_mismatch]);
 
-  //   printf("\n==============================\n");
-  //   printf("Recomputing public key from recovered O\n");
-  //   printf("==============================\n");
+  //   fprintf(fp,"\n==============================\n");
+  //   fprintf(fp,"Recomputing public key from recovered O\n");
+  //   fprintf(fp,"==============================\n");
 
-  int diff = memcmp(rebuilt_pk, real_pk, real_pk_len);
+  // int diff = memcmp(rebuilt_pk, real_pk, real_pk_len);
 
-  if (diff == 0) {
-    printf("SUCCESS: rebuilt public key matches the real public key.\n");
-  } else {
-    printf("FAIL: rebuilt public key differs from the real public key.\n");
+  // if (diff == 0) {
+  //   fprintf(fp, "SUCCESS: rebuilt public key matches the real public key.\n");
+  // } else {
+  //   fprintf(fp, "FAIL: rebuilt public key differs from the real public key.\n");
 
-    int first_mismatch = -1;
-    for (int i = 0; i < real_pk_len; i++) {
-      if (rebuilt_pk[i] != real_pk[i]) {
-        first_mismatch = i;
-        break;
-      }
-    }
-    printf("First differing byte at offset %d (real=0x%02x, rebuilt=0x%02x)\n",
-           first_mismatch, real_pk[first_mismatch], rebuilt_pk[first_mismatch]);
-  }
+  //   // int first_mismatch = -1;
+  //   // for (int i = 0; i < real_pk_len; i++) {
+  //   //   if (rebuilt_pk[i] != real_pk[i]) {
+  //   //     first_mismatch = i;
+  //   //     break;
+  //   //   }
+  //   // }
+  //   // fprintf(
+  //   //     fp, "First differing byte at offset %d (real=0x%02x, rebuilt=0x%02x)\n",
+  //   //     first_mismatch, real_pk[first_mismatch], rebuilt_pk[first_mismatch]);
+  // }
 
   free(O_rec);
   free(P);
@@ -415,7 +426,9 @@ static unsigned char *rebuild_pk_from_recovered_O(
 // ---------------- Fault Simulation ----------------
 
 static void example_fault_P3_OtP2(const mayo_params_t *p) {
-  printf("Fault sim: P3 = O^T P2\n");
+  FILE *fp = fopen("../outs/output.txt", "w");
+
+  fprintf(fp, "Fault sim: P3 = O^T P2\n");
 
   int v = PARAM_v(p);
   int o = PARAM_o(p);
@@ -434,9 +447,9 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
   uint64_t *P3_upper = (uint64_t *)(pk + PARAM_pk_seed_bytes(p));
   if (memcmp(P3_upper, epk + PARAM_P1_limbs(p) + PARAM_P2_limbs(p),
              PARAM_P3_bytes(p))) {
-    printf(" P3 matches \n");
+    fprintf(fp, " P3 matches \n");
   }
-  printf("P3_upper = 0x%016" PRIx64 "\n", *P3_upper);
+  fprintf(fp, "P3_upper = 0x%016" PRIx64 "\n", *P3_upper);
 
   verify_fault_equation(p, epk, esk);
 
@@ -444,12 +457,12 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
   uint64_t *P3_full = calloc(o * o * m_vec_limbs, sizeof(uint64_t));
 
   reconstruct_full_P3(p, epk, P3_full);
-  printf("P3_full = 0x%016" PRIx64 "\n", *P3_full);
+  fprintf(fp, "P3_full = 0x%016" PRIx64 "\n", *P3_full);
 
   int unknowns = v * o;
   int equations = m * (o * (o + 1) / 2);
 
-  printf("SOlving %d equations in %d variables : \n", equations, unknowns);
+  fprintf(fp, "SOlving %d equations in %d variables : \n", equations, unknowns);
 
   unsigned char *A = calloc(equations * unknowns, 1);
   unsigned char *b = calloc(equations, 1);
@@ -488,30 +501,30 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
   }
   int rank = solve_linear_system(A, b, x, equations, unknowns);
 
-  printf("System rank = %d\n", rank);
+  fprintf(fp, "System rank = %d\n", rank);
 
-  printf("\n==============================\n");
-  printf("Recovered Oil Matrix (column-wise)\n");
-  printf("==============================\n");
+  fprintf(fp, "\n==============================\n");
+  fprintf(fp, "Recovered Oil Matrix (column-wise)\n");
+  fprintf(fp, "==============================\n");
 
   for (int i = 0; i < o; i++) {
-    printf("\nColumn %d:\n", i);
+    fprintf(fp, "\nColumn %d:\n", i);
     for (int k = 0; k < v; k++) {
-      printf("%x ", x[i * v + k] & 0xF);
+      fprintf(fp, "%x ", x[i * v + k] & 0xF);
     }
-    printf("\n");
+    fprintf(fp, "\n");
   }
 
-  printf("\n==============================\n");
-  printf("Real Oil Matrix (column-wise)\n");
-  printf("==============================\n");
+  fprintf(fp, "\n==============================\n");
+  fprintf(fp, "Real Oil Matrix (column-wise)\n");
+  fprintf(fp, "==============================\n");
 
   for (int i = 0; i < o; i++) {
-    printf("\nColumn %d:\n", i);
+    fprintf(fp, "\nColumn %d:\n", i);
     for (int k = 0; k < v; k++) {
-      printf("%x ", esk->O[k * o + i] & 0xF);
+      fprintf(fp, "%x ", esk->O[k * o + i] & 0xF);
     }
-    printf("\n");
+    fprintf(fp, "\n");
   }
 
   // Verification
@@ -530,12 +543,12 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
     }
   }
 
-  printf("\n==============================\n");
+  fprintf(fp, "\n==============================\n");
   if (ok)
-    printf("SUCCESS: Oil fully recovered\n");
+    fprintf(fp, "SUCCESS: Oil fully recovered\n");
   else
-    printf("FAIL: Oil mismatch\n");
-  printf("==============================\n");
+    fprintf(fp, "FAIL: Oil mismatch\n");
+  fprintf(fp, "==============================\n");
 
   // Now recompute P3 from the recovered O and rebuild cpk, to check that
   // a fresh keypair_compact-style packing reproduces the real public key.
@@ -590,15 +603,15 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
 
   int res = mayo_sign(p, sig, &smlen, msg, msglen, sk);
 
-  printf("\n===== Signature Verification =====\n");
+  fprintf(fp, "\n===== Signature Verification =====\n");
 
   res = mayo_verify(p, msg, msglen, sig, cpk);
-  printf("Verify with recomputed cpk   : %s\n",
-         res == MAYO_OK ? "PASS" : "FAIL");
+  fprintf(fp, "Verify with recomputed cpk   : %s\n",
+          res == MAYO_OK ? "PASS" : "FAIL");
 
   res = mayo_verify(p, msg, msglen, sig, rebuilt_pk);
-  printf("Verify with rebuilt pk       : %s\n",
-         res == MAYO_OK ? "PASS" : "FAIL");
+  fprintf(fp, "Verify with rebuilt pk       : %s\n",
+          res == MAYO_OK ? "PASS" : "FAIL");
   free(sig);
   free(pk);
   mayo_secure_free(sk, PARAM_csk_bytes(p));
@@ -610,4 +623,10 @@ static void example_fault_P3_OtP2(const mayo_params_t *p) {
   free(x);
 }
 
-int main(void) { example_fault_P3_OtP2(NULL); }
+int main(void) {
+  if (mkdir("../outs", 0755) == -1 && errno != EEXIST) {
+    perror("mkdir");
+    return 1;
+  }
+  example_fault_P3_OtP2(NULL);
+}
